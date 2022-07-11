@@ -1,0 +1,322 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height:16%;
+    display: flex;
+    background:#00264d;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+#header ul{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    background-color: white;
+    width: 15%;
+    border-style: solid;
+    border-color: #e62e00;
+    margin-left: auto;
+    margin-right: auto;
+}
+li.a{
+    font-size: 140.5%;
+    padding: 9px 0px 3px 0px;
+    text-align: center;
+}
+li.b{
+    font-size: 62.5%;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: row;
+}
+.mid{
+    text-align: center;
+    flex: 2;
+    position: relative;
+    left: 15vw;
+}
+.nav-ele ul{
+    display: flex;
+}
+.nav-ele li{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-ele .ele-1{
+    position: relative;
+    right: 55vw;
+    top: 0.5vh;
+}
+.ele-1 h4{
+    padding-bottom: 1vh;
+    text-align: center;
+}
+.ele-1 .in{
+    padding: 4px;
+}
+.nav-ele .ele-2{
+    flex: 3;
+    position: relative;
+    right: 9vw;
+}
+.ele-2 h4{
+    padding-bottom: 1vh;
+}
+.mail .email{
+    padding: 5px;
+}
+.mail .submit{
+    background-color: black;
+    color: white;
+    position: relative;
+    right: 5px;
+    padding: 5px;
+}
+.toggle-btn{
+    position: absolute;
+    right: 146px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-btn .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/*
+.main{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.main1{
+    display: flex;
+    flex-direction: column;
+    box-flex: column;
+    color:black;
+    padding-left: 8px;
+}
+.main1 h4{
+    margin-bottom: 3%;
+}
+.main2{
+    padding: 1rem;
+    text-align: center;
+}
+.main3{
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+}
+.main3 h4{
+    padding-bottom: 7px;
+    
+}
+.main3 .mail{
+    display: flex;
+}
+.main3 .submit{
+    background-color: black;
+    color: white;
+    position: relative;
+    right: 5px;
+}
+*/
+
+
+.line{
+    width: 81%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+.newsfeed{
+    display: flex;
+    flex-direction: column;
+}
+.article {
+    display: flex;
+    width:100%;
+    padding-left:2%;
+}
+img{
+    width:53%;
+    height:100%;
+    margin-left:40%;
+}
+.image{ 
+    width: 20%;
+}
+.content{
+    width:60%;
+    margin-left:2%;
+}
+.news{
+    text-align: justify;
+}
+.cr{
+    background-color: #db3f0a;
+    color:white;
+}  
+.newsfeed .line{
+    width: 72%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 10%;
+}  
+.footer{
+    padding:1%;
+    background:#00264d;
+    color: white;
+}
+.footer p{
+    text-align: center;
+    font-size: small;
+}
+
+@media screen and (max-width: 553px){
+    #header ul{
+        width: 50%;
+        font-size: medium; 
+    }
+    
+    /*.main{
+        flex-direction: column;
+    }
+    .main2{
+        padding: 0.5rem;
+    }
+    .main3 h4{
+        text-align: center;
+    }*/ 
+    .article{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .content{
+        padding-right: 1rem;
+    }
+    .article .img1{
+        position: relative;
+        right: 76px;
+        height: 100px;
+        width: auto;
+    }
+    .article .img2{
+        position: relative;
+        right: 50px;
+        height: 100px;
+        width: auto;
+    }
+    .article .img3{
+        position: relative;
+        right: 75px;
+        height: 100px;
+        width: auto;
+    }
+    .newsfeed .line{
+        width: 80%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        margin-left: 10%;
+    }  
+}
+@media screen and (max-width: 994px){
+    .toggle-btn{
+        display: flex;
+        position: relative;
+        left: 25%;
+    }
+    .nav-ele{
+        display: none;
+        padding-top: 2vw;
+        position: relative;
+        right: 17vw;
+    }
+    .ele-1{
+        position: relative;
+        left: 3vw;
+    }
+    .ele-2{
+        position: relative;
+        left: 4vw;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-ele ul{
+        flex-direction: column;
+        width: auto;
+        position: relative;
+        left: 15vw;
+        padding-top: 2%;
+        padding-right: 3vw;
+    }
+    .ele-1 h4{
+        font-size: small;
+    }
+    .ele-1 .in{
+        padding: 0;
+    }
+    .ele-2 h4{
+        font-size: small;
+        position: relative;
+        left: 15vw;
+    }
+    .mail .email{
+        padding: 0;
+        position: relative;
+        right: 2vw;
+    }
+    .ele-2{
+        padding: 2vw;
+        
+    }
+    .mail .submit{
+        padding: 0;
+        position: relative;
+        right: 3vw;
+    }
+    .nav-ele.active{
+        display: flex;
+    }
+    .mid{
+        display: flex;
+    }
+    .mid h3{
+        position: relative;
+        right: 30%;
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 994px) and  (min-width: 500px){
+    .mid h3{
+        position: relative;
+        right: 70%;
+        font-size: x-large;
+    }
+    .ele-2 h4{
+        font-size: small;
+        position: relative;
+        left: 8vw;
+    }
+}
